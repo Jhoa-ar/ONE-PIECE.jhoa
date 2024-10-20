@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif; 
+  background: linear-gradient(to bottom, black 10%, orangered 75%, yellow);
+    color: #EAEAEA; 
+}
+
+header {
+  background: url('../img/header.jpg') no-repeat center center;
+  background-size: cover;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  color: #FFD700; 
+  font-size: 5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+nav {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5); 
+  background: url('one piece\img\PIECE.jpg') no-repeat center center; 
+  background-size: cover;
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+  z-index: 20;
+}
+
+
+nav.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #EAEAEA; 
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #FFD700; 
+}
+
+.caja {
+  padding: 20px;
+  font-size: 1.2rem; 
+  background: linear-gradient(135deg, rgba(70, 70, 70, 0.9), rgba(100, 100, 100, 0.9)), url('one piece/img/PIECE.jpg'); /* Gradiente con imagen */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  font-family: 'Georgia', cursive; 
+  color: #FFFFFF; 
+  cursor: pointer;
+}
+
+.container p {
+  text-decoration: none;
+  color: #EAEAEA; 
+  font-size: 24px; 
+  text-align: center;
+  transition: color 0.3s; 
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+ul li {
+  background-color: rgba(50, 50, 50, 0.8); 
+  border-radius: 10px;
+  padding: 15px;
+  color: #EAEAEA; /* Color de texto claro */
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+ul li:hover {
+  background-color: rgba(70, 70, 70, 0.9); 
+}
+
+.center {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+#redes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+#redes a img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+#redes a img:hover {
+  transform: scale(1.2);
+}
+
+#contacto {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(50, 50, 50, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+#contacto div {
+  text-align: center;
+  color: #EAEAEA; 
+
+.pie {
+  background-color: #000;
+  text-align: center;
+  padding: 10px;
+  color: #EAEAEA; 
+}
+
+iframe {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.sticky + .caja {
+  padding-top: 70px;
+}
